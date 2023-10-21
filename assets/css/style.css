@@ -1,0 +1,388 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/banner.png');
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 7%;
+}
+.logo{
+    width:160px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style:none;
+    display:inline-block;
+    margin:10px 35px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:19px;
+    text-shadow: 0 0 2px black;
+}
+.register-btn{
+    background: #fff;
+    color:#000;
+    padding: 8px 20px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:16px;
+}
+.container{
+    padding:0 7%;
+}
+.container h1{
+    font-size:54px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top:22%;
+    text-shadow: 0 0 2px black;
+}
+.search-bar{
+    background: #fff;
+    width:65%;
+    margin:35px auto;
+    padding:6px 10px 6px 30px;
+    border-radius:50px;
+}
+.search-bar form{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    font-size:18px;
+    display:block;
+    border:0;
+    outline:none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #ff5361;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+.search-bar form button img{
+    width:15px;
+    margin-top:6px;
+}
+.location-input{
+    flex:1;
+}
+.search-bar form label{
+    font-weight: 600;
+    font-size:18px;
+}
+
+/* ---------- EXCLUSIVES ---------- */
+
+.sub-title{
+    margin:80px 0 40px;
+    font-size:36px;
+    font-weight:500;
+    color:#333;
+}
+.exclusives{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:30px;
+}
+.exclusives div img{
+    width:100%;
+    border-radius: 10px;
+}
+.exclusives div{
+    position:relative;
+}
+.exclusives div span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+}
+
+/* ---------- TRENDING PLACES ---------- */
+
+.trending{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:30px;
+    margin-bottom:30px;
+}
+.trending div img{
+    width:100%;
+    border-radius: 10px;
+}
+.trending div h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ---------- CALL TO ACTION ---------- */
+
+.cta{
+    margin:80px 0;
+    background-image: linear-gradient(90deg, #3f2321, transparent), url('../images/banner-2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius:10px;
+    padding:5%;
+    color:#fff;
+}
+.cta h3{
+    font-size:65px;
+    line-height: 80px;
+    font-weight: 500;
+    text-shadow: 0 0 2px black;
+}
+.cta p{
+    font-size: 19px;
+    margin:20px 0;
+    text-shadow: 0 0 2px black;
+}
+.cta-btn{
+    background: #ff5361;
+    color:#fff;
+    text-decoration: none;
+    padding:12px 30px;
+    border-radius:8px;
+    margin-top:20px;
+    display:inline-block;
+}
+
+/* ---------- TRAVELLERS STORIES ---------- */
+
+.stories{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:30px;
+    margin-bottom:30px;
+}
+.stories div img{
+    width:100%;
+    border-radius: 10px;
+}
+.stories div{
+    position:relative;
+    text-align: center;
+}
+.stories div p{
+    font-size:22px;
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    text-shadow: 0 0 2px black;
+}
+.start-btn{
+    text-decoration: none;
+    background: #ff5361;
+    color:#fff;
+    width:80%;
+    max-width:350px;
+    display:block;
+    font-size:20px;
+    text-align: center;
+    margin:60px auto;
+    padding:15px;
+    border-radius:30px;
+    text-shadow: 0 0 2px black;
+}
+
+/* ---------- ABOUT US ---------- */
+
+.about-msg{
+    text-align: center;
+    margin: 80px 0;
+    color:#333;
+    font-size: 17px;
+}
+.about-msg h2{
+    font-size:28px;
+    margin-bottom:30px;
+    font-weight: 500;
+}
+
+/* ---------- FOOTER ---------- */
+
+
+.footer{
+    margin:80px 0 10px;
+    text-align:center;
+}
+.footer a{
+    text-decoration: none;
+    color:#999;
+    margin:0 10px;
+    font-size:22px;
+}
+.footer hr{
+    background: #999;
+    height:1px;
+    width:100%;
+    border:0;
+    margin:20px 0;
+}
+.footer p{
+    padding-bottom:15px;
+}
+.active{
+    position:relative;
+}
+.active::after{
+    content:'';
+    background: #fff;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    width:20%;
+    height:2px;
+    border-radius:2px;
+    transform: translate(-50%);
+}
+nav .fa-solid{
+    display:none;
+}
+
+/* ---------- MEDIA QUERY FOR SMALL SCREENS ---------- */
+
+@media only screen and (max-width:900px){
+
+
+    .logo{
+        width:140px;
+        position:fixed;
+        top:3%;
+        left:7%;
+    }
+    nav{
+        position:fixed;
+        top:0;
+        z-index:100;
+        display:inline-block;
+        width:100%;
+        padding:80px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height:80px;
+        transition: max-height 0.5s;
+        overflow:hidden;
+    }
+    nav .nav-links li{
+        margin:10px 0;
+        display:block;
+    }
+    nav .nav-links li a{
+        font-size:16px;       
+    }
+    .register-btn{
+        font-size:12px;
+        margin:15px 0 30px;
+        display:inline-block;
+    }
+    .container h1{
+        padding-top: 95px;
+        font-size:22px;
+    }
+    .cta h3{
+        font-size:30px;
+        line-height: unset;
+    }
+    nav .fa-solid{
+        display:block;
+        color:#fff;
+        position:fixed;
+        top:4%;
+        right:7%;
+        font-size:28px;
+    }
+    .active::after{
+        left:-30px;
+        bottom:50%;
+        transform:translate(0, -50%);
+        width:10%;
+    }
+    .menu-height{
+        max-height:300px;
+    }
+    .search-bar{
+        width:90%;
+        margin:10px auto;
+        padding:20px 10px 30px;
+        border-radius:6px;
+        position:relative;
+    }
+    .search-bar form{
+        display:block;
+    }
+    .search-bar form input{
+        font-size:16px;
+        border-bottom: 1px solid #ddd;
+        width:100%;
+        margin-bottom:15px;
+        margin-top:5px;
+        padding-bottom:5px;
+    }
+    .search-bar form button{
+        position:absolute;
+        bottom:-60px;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .sub-title{
+        font-size:22px;
+        margin:50px 0 30px;
+    }
+    .cta{
+        margin:50px 0;
+        padding:15% 5%;
+    }
+    .cta h3{
+        font-size:23px;
+    }
+    .cta p{
+        font-size: 17px;
+        padding:20px 0;
+    }
+    .cta-btn{
+        font-size:14px;
+        padding:6px 15px;
+        border-radius:4px;
+    }
+    .stories div p{
+        font-size:21px;
+    }
+    .start-btn{
+        font-size:16px;
+        margin:30px auto;
+    }
+    .about-msg{
+        margin:50px auto;
+    }
+    .about-msg p{
+        font-size:16px;
+        text-align: justify;
+    }
+}
