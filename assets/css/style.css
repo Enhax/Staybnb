@@ -99,9 +99,9 @@ nav{
     font-weight:500;
     color:#333;
 }
-.exclusives{
+.container .exclusives{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap:30px;
 }
 .exclusives div img{
@@ -302,7 +302,7 @@ nav .fa-solid{
         margin:15px 0 30px;
         display:inline-block;
     }
-    .container h1{
+    .header .container h1{
         padding-top: 95px;
         font-size:22px;
     }
@@ -555,4 +555,223 @@ nav .fa-solid{
         line-height: 20px;
         font-size:14px;
     }
+}
+
+/* ---------- HOUSE WENGE PAGE ---------- */
+
+.house-details{
+    padding:0 12%;
+}
+.house-title{
+    margin:50px 0 30px;
+}
+.house-title h1{
+    font-weight: 600;
+}
+.house-title .row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin:10px 0;
+}
+.house-title span{
+    margin:0 20px;
+}
+.house-title i{
+    color:#ff5361;
+    font-size:14px;
+}
+.gallery{
+    display:grid;
+    grid-gap:10px;
+    grid-template-areas: 'first first . .''first first . .';
+    margin:20px 0;
+}
+.gallery div img{
+    display:block;
+    width:100%;
+    border-radius:10px;
+}
+.gallery .gallery-img-1{
+    grid-area: first;
+}
+.small-details h2{
+    font-weight: 500;
+}
+.small-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+.line{
+    border:0;
+    height:1px;
+    background: #ccc;
+    width: 100%;
+    max-width:1000px;
+    margin:20px 0 50px;
+}
+.check-form{
+    margin:30px 0;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius:8px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:10px 50px;
+}
+.check-form label{
+    display:block;
+    font-size:18px;
+}
+.check-form div{
+    padding:20px;
+}
+.check-form  input{
+    font-size:16px;
+    border:0;
+    outline:none;
+    background-color: transparent;
+}
+.check-form button{
+    background: #ff5361;
+    font-size:18px;
+    border-radius:8px;
+    color:#fff;
+    padding:18px;
+    width:400px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+.guest-field{
+    flex:1;
+}
+.details-list{
+    list-style:none;
+    margin:50px 0;
+}
+.details-list li{
+    margin-left:50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:20px;
+    color:#555;
+    position:relative;
+}
+.details-list li span{
+    display:block;
+    font-weight: 400;
+    font-size:16px;
+}
+.details-list li i{
+    position:absolute;
+    top:5px;
+    left:-40px;
+}
+.home-descr{
+    max-width:700px;
+    margin-bottom:50px;
+}
+.map{
+    margin:50px 0;
+}
+.map iframe{
+    width:100%;
+}
+.map h3{
+    font-size:26px;
+    margin-bottom:30px;
+    font-weight: 500;
+}
+.map b{
+    display: block;
+    margin-bottom:16px;
+}
+.host{
+    display:flex;
+    align-items: center;
+}
+.host img{
+    width:80px;
+    border-radius:50%;
+    margin-right:30px;
+}
+.host h2{
+    margin-bottom:10px;
+    font-weight: 500;
+}
+.host i{
+    color:#ff5361;
+}
+.contact-host{
+    display:inline-block;
+    margin:40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding:15px 50px;
+    border:1px solid #ff5361;
+    border-radius:8px;
+}
+
+/* ---------- MEDIA QUERY HOUSE DETAILS PAGE---------- */
+
+@media only screen and (max-width:900px){
+
+    .house-details{
+        margin-top:120px;
+        padding:0 6%;
+    }
+    .row p{
+        margin-top: 10px;
+    }
+    .gallery{
+        grid-template-areas: 'first first' '. .' '. .' 
+    }
+    .small-details h2{
+        font-size:20px;
+        margin-top:24px;
+    }
+    .small-details p{
+        padding-top:10px;
+        font-size:14px;
+    }
+    .small-details h4{
+        font-size:18px;
+        margin:10px 0;
+        text-align: left;
+    }
+    .check-form{
+        padding:10px 30px;
+    }
+    .check-form div{
+        padding:20px 0;
+        width:100%;
+    }
+    .check-form input{
+        border-bottom:1px solid #ccc;
+        width:100%;
+        padding-bottom:5px;
+    }
+    .check-form button{
+        margin-top:10px;
+        margin-bottom:15px;
+        font-size:14px;
+        border-radius:4px;
+    }
+    .host{
+        display:block;
+        line-height:28px;
+    }
+    .host p{
+        font-size: 14px;
+    }
+    .contact-host{
+        margin:40px 25px;
+
+    }
+    .map h3{
+        font-size:24px;
+    }
+
 }
